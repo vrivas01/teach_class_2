@@ -23,7 +23,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying...'
-                sh 'java -cp target/teach2-app-1.0-SNAPSHOT.jar com.apasoft.ToUpper ${param}'
+                sh 'java -cp target/teach2-app-1.0-SNAPSHOT.jar com.apasoft.ToUpper "${param}"'
             }
         }
     }
